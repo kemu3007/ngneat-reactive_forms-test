@@ -1,0 +1,19 @@
+angular form
+
+<form [formGroup]="form">
+  <input formControlName="firstName" />
+  <input formControlName="lastName" />
+</form>
+
+{{ form.value | json }}
+
+<hr />
+
+ngneat form
+
+<form [formGroup]="neatForm">
+  <input formControlName="firstName" /><!-- intellisenseが効きます-->
+  <input formControlName="lastName" />
+</form>
+
+{{ neatForm.value | json }}
